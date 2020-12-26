@@ -29,9 +29,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
+        
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -106,7 +108,8 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
-    public void resetScore(View v) {
+    public void resetScore(View v) 
+    {
         scoreTeamA=0;
         scoreTeamB=0;
         displayForTeamA(scoreTeamA);
